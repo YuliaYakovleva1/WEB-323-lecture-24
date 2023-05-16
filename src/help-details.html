@@ -94,7 +94,14 @@
   </header>
 
   <section class="question">
-    <button id="question-btn" class="btn btn-link">Ask a question</button>
+    <button id="question-btn" class="btn btn-link">
+      <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false"
+        style="height: 16px; width: 16px; display: block; fill: currentcolor;">
+        <path
+          d="m5.49 0c-3.02 0-5.49 2.46-5.49 5.49v9.02c0 3.03 2.46 5.49 5.5 5.49h3.23l2.87 3.8c.2.27.6.27.8 0l2.87-3.8h3.23c3.03 0 5.5-2.46 5.5-5.49v-9.02c0-3.03-2.46-5.49-5.49-5.49zm13.01 19h-3.47c-.16 0-.31.07-.4.2l-2.63 3.47-2.63-3.47c-.09-.13-.24-.2-.4-.2h-3.47c-2.48 0-4.5-2.01-4.5-4.49v-9.02c0-2.47 2.02-4.49 4.49-4.49h13.02c2.48 0 4.49 2.01 4.49 4.49v9.02c0 2.48-2.02 4.49-4.5 4.49z"
+          fill-rule="evenodd"></path>
+      </svg>
+      Ask a question</button>
   </section>
 
   <dialog class="modal" id="modal-question">
@@ -107,30 +114,49 @@
           <path d="m26 6-20 20"></path>
         </svg>
       </button>
-      <h2 class="login-header__title">Welcome back, User</h2>
     </header>
 
-    <section class="login-body">
-      <div class="login-body__avatar">
-        <img src="images/avatar.jpg" alt="avatar">
+    <section class="question-body">
+      <div class="question-title">
+        <h2>Questions about this home?</h2>
       </div>
+      <div class="question-subtitle">
+        <h3>We’re excited you’re here. A Villa Specialist from Luxury Retreats, now an Airbnb company, will be in touch
+          to finalise the details.
+        </h3>
+      </div>
+      <hr>
+
       <form class="flex-column" action="#">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Your email">
+        <div class="flex-row">
+          <input id="first-name" type="text" placeholder="First name*" required>
 
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Your password">
+          <input id="last-name" type="text" required placeholder="Last name*" required>
+        </div>
 
-        <button id="airbnb" class="btn btn-airbnb" type="button">Log in</button>
+        <div class="flex-row">
+          <input id="email" type="email" placeholder="Email*" required>
+
+          <input id="tel" type="text" placeholder="Telephone">
+        </div>
+
+        <label for="message">Your message</label>
+
+        <textarea name="message" placeholder="For example: Is this home family friendly? What other homes should I consider?" id="message" cols="30" rows="10"></textarea>
+        <div class="flex-row-chb">
+          <input id="chb" type="checkbox">
+          <label for="chb">I'd like to receive marketing and policy communications from Luxury Retreats</label>
+        </div>
+        <button class="btn-send-message">Send message</button>
+     
       </form>
+
+      
     </section>
 
-    <footer class="login-footer">
-      <button type="button" class="btn btn-link mb-24px">Forgot password?</button>
-      <div class="login-footer__flex">
-        <span> Not you?</span>
-        <button type="button" class="btn btn-link">Use another account</button>
-      </div>
+    <footer class="question-footer">
+      <p>Learn how we handle your details in our</p>
+      <a class="question-link" href="#" target="_blank">Privacy policy</a>
     </footer>
   </dialog>
 

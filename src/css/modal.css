@@ -113,3 +113,93 @@
   max-width: 384px;
   color: var(--subtitle-color);
 }
+
+
+
+
+/* Модалка на странице help-details */
+.question-body {
+  padding: 40px;
+  color: var(--nav-link-color);
+}
+
+.question-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.question-subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 30px;
+}
+
+hr {
+  width: 100%;
+  margin: 30px auto;
+  border-top: 1px solid var(--nav-link-color);
+  opacity: 10%;
+}
+
+#message {
+  height: 100px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #717171;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#first-name,
+#last-name,
+#email,
+#tel {
+  width: 49.7%;
+  height: 50px;
+}
+
+#first-name:hover, #last-name:hover, #email:hover,
+#tel:hover {
+  border: 1px solid #222;
+}
+
+#first-name:focus, #last-name:focus, #email:focus,
+#tel:focus {
+  border: 3px solid #222;
+}
+
+#send-message {
+  width: 300px;
+}
+
+.question-footer {
+  color: #222;
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.question-link {
+  font-weight: 600;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+#message:hover {
+  border: 1px solid #222222;
+}
+
+#message:focus {
+  border: 3px solid #222222;
+}
+
+.flex-row-chb {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,3 +1,26 @@
+/* Кнопка "Задать вопрос" */
 .question {
-  padding: 80px 0;
+  padding: 100px 40px;
+  display: flex;
+  align-items: center;
+}
+
+#question-btn {
+  border: 1px solid #000;
+  padding: 20px;
+  display: flex;
+  background-color: var(--body-color);
+  border: 1px solid #EBEBEB;
+  border-radius: 29px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+#question-btn:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.question svg {
+  padding-right: 15px;
 }
